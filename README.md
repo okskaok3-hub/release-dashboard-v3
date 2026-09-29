@@ -6,7 +6,7 @@ ZoomClipboard is a Windows utility for sending files to a private Zoom Team Chat
 
 - Windows 10 or Windows 11
 - [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
-- A Zoom user-level OAuth app with Public Client OAuth enabled
+- A Zoom account
 
 ## Install and run
 
@@ -15,6 +15,8 @@ ZoomClipboard is a Windows utility for sending files to a private Zoom Team Chat
 3. Run `ZoomClipboardUI.exe`.
 4. Select **Sign in** and approve access in Zoom.
 5. Choose the private Team Chat channel to use for file transfers.
+
+The Zoom app configuration and Public Client ID are already included. Users do not need to create or configure their own OAuth app.
 
 Keep the extracted folder in place if you enable Explorer integration, because the context-menu command runs the executable from that location.
 
@@ -29,21 +31,9 @@ Keep the extracted folder in place if you enable Explorer integration, because t
 
 On Windows 11, the Explorer command may appear under **Show more options**. Zoom's send-file endpoint limits regular files to 20 MB.
 
-## Zoom OAuth setup
+## Sign in
 
-In Zoom Marketplace, create a user-level OAuth app and:
-
-1. Enable **Use Public Client OAuth**.
-2. Add `http://127.0.0.1:8765/callback` as the development redirect URL and OAuth allow-list URL.
-3. Configure these scopes:
-
-   - `team_chat:write:message_files`
-   - `team_chat:read:list_user_messages`
-   - `team_chat:read:user_message`
-   - `team_chat:read:file`
-   - `team_chat:read:list_user_channels`
-
-The optional `user:read:user` scope allows the app to display the signed-in user's name and email. Use the app's **Public Client ID**, never its Client Secret.
+Select **Sign in** in the app and complete Zoom's authorization page. The app uses Public Client OAuth, so no client secret is distributed with the application. The included Zoom app requests only the permissions needed for Team Chat file transfers and recent-file browsing.
 
 ## Command-line usage
 
