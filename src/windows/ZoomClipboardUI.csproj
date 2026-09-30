@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <OutputPath>bin\ui\</OutputPath>
+    <IntermediateOutputPath>obj\ui\</IntermediateOutputPath>
+    <DefineConstants>ZOOM_GUI</DefineConstants>
+    <AssemblyName>ZoomClipboardUI</AssemblyName>
+    <RootNamespace>ZoomClipboard</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="ZoomClipboardApplicationContext.cs" />
+    <Compile Include="OnboardingForm.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="DashboardForm.cs" />
+    <Compile Include="UploadForm.cs" />
+    <Compile Include="PremiumControls.cs" />
+    <Compile Include="ProgressFileContent.cs" />
+    <Compile Include="DefaultClientId.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+src/linux/* text eol=lf
+*.md text eol=lf
+*.cs text
+*.csproj text
