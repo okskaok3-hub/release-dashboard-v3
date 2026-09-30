@@ -2,7 +2,7 @@
 
 Transfer files through a private Zoom Team Chat channel. Both versions offer guided setup, browser-based Zoom OAuth, channel creation/selection, recent-file browsing, upload, download links, and confirmed deletion.
 
-Download the archives from [GitHub Releases](https://github.com/okskaok3-hub/release-dashboard-v3/releases/latest). Do not download individual DLLs from the repository as an installation method.
+Download the archives from [GitHub Releases](https://github.com/okskaok3-hub/zoom-clipboard/releases/latest). The repository contains source and documentation; installable packages are attached to releases.
 
 ## Choose your download
 

@@ -5,3 +5,8 @@
 src/windows/out/
 *.zip
 *.tar.gz
+/*.exe
+/*.dll
+/*.pdb
+/*.deps.json
+/*.runtimeconfig.json
